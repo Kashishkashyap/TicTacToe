@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(73, 12, 88);
+    color: white;
+    height: 40px;
+    font-size: 35px;
+    padding-left: 20px;
+}
+nav ul{
+    list-style-type: none;
+}
+
+.gameContainer{
+    height: 40vw;
+    display: flex;
+}
+.ttt{
+    padding-top: 20px;
+    width: 50%;
+    display: grid;
+    grid-template-rows: repeat(3, 10vw) ;
+    grid-template-columns: repeat(3,10vw);
+    text-align: center;
+    justify-content: center;
+}
+.result{
+    width: 50%;
+}
+.result h1{
+    font-family: 'Baloo Bhaina 2', cursive;
+    padding-top: 60px;
+    color: rebeccapurple;
+}
+.info{
+    padding-top: 20px;
+    font-size: 20px;
+    color: rebeccapurple;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+#reset{
+    background-color: rgb(46, 13, 78);
+    font-family: 'Baloo Bhaina 2', cursive;
+    padding: 0px 10px;
+    border-radius: 20px;
+    color: white;
+}
+.box{
+    border: 1px solid black;
+    font-size: 8vw;
+}
+
+.box:hover{
+    background-color: rgb(204, 130, 243) ;
+}
+
+.boxtext{
+    color: rgb(102, 13, 102);
+}
+.image img{
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+    transition: all 2s;
+}
+.won{
+    color: rgb(168, 47, 168);
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.br{
+    border-right: 0;
+}
+.bl{
+    border-left: 0;
+}
+.bt{
+    border-top: 0;
+}
+.bb{
+    border-bottom: 0;
+}
+@media  screen and (max-width: 800px) {
+   .gameContainer{
+       display: flex;
+       flex-direction: column;
+   }
+  
+   .result h1{
+    font-family: 'Baloo Bhasina 2', cursive;
+    padding-top: 60px;
+    color: rebeccapurple;
+    font-size: 20px;
+}
+}
